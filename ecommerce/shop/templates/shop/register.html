@@ -1,0 +1,13 @@
+{% extends "shop/base.html" %}
+
+
+
+{% block body_block%}
+{% comment %} {% load staticfiles%} {% endcomment %}
+<form method="post">
+{% csrf_token %}
+ {{register}}
+
+ <input type="submit" name="" value="submit" action ='.'>
+</form>
+{%endblock%}
